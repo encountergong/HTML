@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+<style type="text/css">
+    td{
+        border-style:solid;
+        border-widen:1px;
+        font-size=200%;
+    }
+    td:hover{
+        background-color:cyan;
+    }
+    </style>
+<body>
+    <section>
+    <table>
+        <tr>
+            <td>1<td>
+            <td>一个人生活</td>
+            <td>温岚</td>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td>让我爱你</td>
+            <td>胡夏</td>
+        </tr>
+    </table> 
+        
+        
+        <button type="button" id="findHover"autofocus>查看鼠标焦点目标位置</button>
+        <div id="hoverResult"</div>
+        <div id="text/javascript"></div>
+        <script type="text/javascript">
+            document.getElemenById("findHover).onclick=function(){
+            <!--找到鼠标当前选题的单元格-->
+            var hovered=document.querySelector("td:hover");
+            if(hovered)
+                document.getElementByld("hoberResult").innerHeml=hovered.innerHtml;
+            }
+        </script>
+   
+ 
+ </section>
+</body>
+</html>
